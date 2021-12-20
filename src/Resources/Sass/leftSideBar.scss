@@ -1,0 +1,74 @@
+@import 'varriables';
+
+.left_bar {
+    grid-column: 1/2;
+    // grid-row: 1;
+    background: linear-gradient(360deg, #010b1e 0.88%, #020b1c 99.9%);
+    mix-blend-mode: normal;
+    opacity: 0.91;
+    height: 100vh;
+    backdrop-filter: blur(30.1256px);
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+
+    .logo {
+        margin-bottom: 30px;
+        text-align: center;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    .navigation {
+        color: #fff;
+
+        .side_option {
+            margin-top: 10px;
+            cursor: pointer;
+            transition: color 0.2s ease-in;
+
+            &:hover {
+                color: $spotify;
+            }
+
+            a {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+            }
+
+            span,
+            p {
+                font-weight: bold;
+                text-transform: capitalize;
+            }
+        }
+
+        .option {
+            margin-top: 20px;
+            .title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: #3b4c64;
+                border-bottom: 1px solid rgba(#fff, 0.5);
+                margin-bottom: 5px;
+                cursor: pointer;
+
+                h3 {
+                    text-transform: uppercase;
+                    font-weight: 400;
+                }
+            }
+
+            &:last-child .scroll {
+                height: 300px !important;
+                overflow-y: scroll;
+            }
+        }
+    }
+}

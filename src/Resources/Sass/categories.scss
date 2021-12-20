@@ -1,0 +1,35 @@
+.categories {
+    &__header {
+        text-transform: capitalize;
+        font-weight: 700;
+        color: #fff;
+        padding: 20px 25px;
+        letter-spacing: 1.5px;
+    }
+
+    &__items {
+        display: flex;
+        gap: 25px;
+        flex-wrap: wrap;
+        padding: 20px 25px;
+    }
+
+    .card {
+        display: inline-block;
+
+        a {
+            display: inline-block;
+        }
+        .details {
+            position: absolute;
+            bottom: 28%;
+            left: 50%;
+            transform: translateX(-60%);
+            border-bottom: transparent;
+            transition: all 0.4s linear;
+        }
+        &:hover .details {
+            border-bottom: 1px solid #fff;
+        }
+    }
+}

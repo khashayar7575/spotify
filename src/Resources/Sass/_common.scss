@@ -1,0 +1,12 @@
+.main {
+    grid-column: 2/-1;
+    grid-row: 1;
+    background: #020916;
+    color: #fff;
+
+    display: flex;
+
+    & > div:first-child {
+        flex: 1;
+    }
+}

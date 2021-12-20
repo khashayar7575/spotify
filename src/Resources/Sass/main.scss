@@ -1,0 +1,21 @@
+.main {
+    position: relative;
+    height: 100vh;
+    justify-content: flex-end;
+    overflow-y: scroll;
+}
+.featured {
+    padding: 20px 15px 0;
+    &__title {
+        border-bottom: 1px solid #808080;
+        font-weight: bold;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+    &__playlists {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+}
